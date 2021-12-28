@@ -78,6 +78,7 @@ def sentimental_news(my_api_key,category = "business", country = "-"):
             return p.sub('', data)
         
         #Define stopwords - in this case english
+        nltk.download('stopwords') # First download corpus
         stop_words = (nltk.corpus.stopwords.words(language))
         #Remove html tags
         sentence = striphtml(sentence)
