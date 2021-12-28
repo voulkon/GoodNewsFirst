@@ -8,4 +8,7 @@ It Combines:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🧪 [NLTK]https://www.nltk.org/'s [SentimentIntensityAnalyzer]https://www.nltk.org/api/nltk.sentiment.sentiment_analyzer.html to detect whether each new has a postive or 	negative spirit.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⚙ [Streamlit]https://streamlit.io/ module to easily build and deploy an application\n
- To use it, you first need to register for a free API key [here]https://newsapi.org/docs/get-started.
+
+
+To use it, you first need to register for a free API key [here]https://newsapi.org/docs/get-started.
+
