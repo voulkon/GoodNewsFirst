@@ -99,6 +99,7 @@ def sentimental_news(my_api_key,category = "business", country = "-"):
                 sentence = sentence.replace(element, "")
 
         #Remove stopwords and return
+        nltk.download('punkt')
         to_be_returned = [ word.lower() for word in nltk.word_tokenize(sentence) if not word.lower() in stop_words ]
 
         #In case we don't want duplicate words
