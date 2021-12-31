@@ -172,6 +172,8 @@ def sentimental_news(my_api_key,category = "business", country = "-"):
     news_df = query_to_dataframe(news_query)
     
     # Sentiment Analysis ######
+    #First, download appropriate lexicon
+    nltk.downloader.download('vader_lexicon')
     #Initiate the sentiment analyzer
     analyzer = SentimentIntensityAnalyzer()
     #Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
