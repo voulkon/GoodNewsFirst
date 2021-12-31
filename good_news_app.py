@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Dec 28 20:38:34 2021
+Created on Sun Dec 31 20:38:34 2021
 
 @author: kvoul
 """
@@ -78,8 +78,15 @@ def sentimental_news(my_api_key,category = "business", country = "-"):
             return p.sub('', data)
         
         #Define stopwords - in this case english
-        nltk.download('stopwords') # First download corpus
-        stop_words = (nltk.corpus.stopwords.words(language))
+        #nltk.download('stopwords') # First download corpus #not working on the online application hosted on streamlit
+        #stop_words = (nltk.corpus.stopwords.words(language))
+        
+        #Instead, this will work:
+        #Read lines from file included in the same directory
+        with open('english_stopwords') as f: stop_words = f.readlines()
+        #Remove the \n character
+        stop_words = [word.replace("\n","") for word in stop_words]
+      
         #Remove html tags
         sentence = striphtml(sentence)
         
