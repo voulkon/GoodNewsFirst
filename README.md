@@ -11,4 +11,4 @@ It Combines:
 
 To use it, you first need to register for a free API key [here](https://newsapi.org/docs/get-started).
 
-An already deployed app [here](https://share.streamlit.io/voulkon/goodnewsfirst/main/good_news_app.py).
+Find an already deployed app [here](https://share.streamlit.io/voulkon/goodnewsfirst/main/good_news_app.py).
